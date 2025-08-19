@@ -336,9 +336,21 @@ color: #272323;
 
 @media (max-width: 500px) {
     .pages {
-        width: 135px;
+        width: 110px;
     }
-
+    .pages .content {
+        font-size: 14px;
+    }
+    .pages .container li a {
+        font-size: 12px;
+    }
+    .pages .profiles .input-search {
+    left: 30%;
+}
+    .dashboard-all {
+    left: 30%;
+    top: 12%;
+    }
     .dashboard-all .h4-p-img,
     .dashboard-all .developer-h5-p {
         width: 270px;
@@ -686,4 +698,5 @@ before
 HTML
 تعمل بها اشكال والوان
 }
+
 

@@ -218,12 +218,9 @@ color: #272323;
 }
 .dashboard-all .h4-p-img img {
     position: absolute;
-    mix-blend-mode: color-burn;
     width: 180px;
     right: 10px;
     bottom: 3px;
-    background-color: #cccc;
-    z-index: -1;
 }
 
 .dashboard-all .h4-p-img h4 {
@@ -700,6 +697,7 @@ before
 HTML
 تعمل بها اشكال والوان
 }
+
 
 
 

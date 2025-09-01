@@ -798,7 +798,7 @@ color: #272323;
 @media (max-width: 500px) {
     .pages {
         width: 110px;
-        height: 170vh;
+        height: 200vh;
     }
     .pages .content {
         font-size: 14px;
@@ -819,12 +819,12 @@ color: #272323;
     }
 
     .quick-draft {
-    top: 44%;
+    top: 50%;
     left: 30%;
     width: 268px;
     }
     .yearly-targets {
-        top: 76%;
+        top: 88%;
         left: 30%;
         width: 268px;
     }
@@ -859,7 +859,7 @@ color: #272323;
     width: 65%;
 }
 .tickets-statistics {
-    top: 108%;
+    top: 126%;
     left: 30%;
     width: 268px;
     height: 250px;
@@ -873,7 +873,7 @@ color: #272323;
     width: 100px;
 }
 .latest-news {
-    top: 140%;
+    top: 163%;
     left: 30%;
     width: 268px;
 }
@@ -1237,6 +1237,7 @@ before
 HTML
 تعمل بها اشكال والوان
 }
+
 
 
 

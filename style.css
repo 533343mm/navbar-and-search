@@ -689,7 +689,7 @@ color: #272323;
 
 .latest-news .h3-p-img-span h3,
 .latest-news .h3-p-img-span p {
-    margin-left: 23%;
+    left: 6%;
     position: absolute;
 }
 
@@ -826,11 +826,16 @@ color: #272323;
     top: 25px;
      margin-left: 15px;
 }
+    .dashboard-all .developer-h5-p p {
+    font-size: 10px;
+}
     .dashboard-all .developer-h5-p span {
     font-size: 7px;
     width: 50px;
     height: 20px;
-    padding: 5px;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
 }
 
     .quick-draft {
@@ -1252,6 +1257,7 @@ before
 HTML
 تعمل بها اشكال والوان
 }
+
 
 
 

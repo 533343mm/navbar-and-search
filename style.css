@@ -826,6 +826,12 @@ color: #272323;
     top: 25px;
      margin-left: 15px;
 }
+    .dashboard-all .developer-h5-p span {
+    font-size: 7px;
+    width: 50px;
+    height: 20px;
+    padding: 5px;
+}
 
     .quick-draft {
     top: 50%;
@@ -1246,6 +1252,7 @@ before
 HTML
 تعمل بها اشكال والوان
 }
+
 
 
 

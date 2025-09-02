@@ -822,12 +822,12 @@ color: #272323;
     margin-top: 9px;
     margin-left: 25px;
     position: absolute;
-    display: flex;
-    flex-flow: row;
+    width: 100px;
+    text-align: center;
 }
     .dashboard-all .first-h3-span span {
     top: 25px;
-     margin-left: 15px;
+     margin-left: 48px;
 }
     .dashboard-all .developer-h5-p p {
     font-size: 10px;
@@ -1260,6 +1260,7 @@ before
 HTML
 تعمل بها اشكال والوان
 }
+
 
 
 

@@ -822,6 +822,8 @@ color: #272323;
     margin-top: 9px;
     margin-left: 25px;
     position: absolute;
+    display: flex;
+    flex-flow: row;
 }
     .dashboard-all .first-h3-span span {
     top: 25px;
@@ -1258,6 +1260,7 @@ before
 HTML
 تعمل بها اشكال والوان
 }
+
 
 
 

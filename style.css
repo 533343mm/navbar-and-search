@@ -996,8 +996,8 @@ color: #272323;
 }
 .everything-1,
 .everything-2 {
-    gap: 1px;
-    margin-left: -5px;
+gap: 55px;
+margin-left: 15px;
 }
 .tickets-statistics .everything-about  {
     width: 100px;
@@ -1377,6 +1377,7 @@ before
 HTML
 تعمل بها اشكال والوان
 }
+
 
 
 

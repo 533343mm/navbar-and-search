@@ -64,11 +64,16 @@ display: flex;
 flex-direction: column;
 position: relative;
 }
+
 .pages .container li {
     list-style: none;
     padding: 10px;
     margin-top: 27px;
+
 }
+
+
+
 .pages .container li a:hover{
     background-color: rgba(235, 241, 235, 0.199);
     color: rgb(59, 59, 59);
@@ -184,6 +189,8 @@ color: #272323;
     left: 35%;
     top: 15%;
     transition: 0.5s;
+    animation: shadow 1s linear;
+    opacity: 1;
 }
 .dashboard-all:hover {
     transform: scale(1.02);
@@ -193,7 +200,6 @@ color: #272323;
     color: #ccc;
     position: absolute;
     top: -35px;
-    left: -36px;
 }
 
 .dashboard-all .first-h3-span span {
@@ -202,6 +208,7 @@ color: #272323;
     height: 4px;
     position: absolute;
     border-radius: 6px;
+    text-align: center;
 }
 
 .dashboard-all .first-h3-span span::after {
@@ -325,7 +332,6 @@ color: #272323;
     top: 40%;
     left: 80%;
     text-align: center;
-
 }
 
 
@@ -345,6 +351,8 @@ color: #272323;
     border-radius: 6px;
     gap: 10px;
     transition: 0.5s;
+    animation: shadow 1s linear;
+    opacity: 1;
 }
 .quick-draft:hover {
     transform: scale(1.02);
@@ -382,7 +390,7 @@ color: #272323;
 }
 
 .quick-draft .btn {
-    width: 30%;
+    width: 35%;
     height: 30px;
     background-color:rgb(10, 10, 136);
     color: #ccc;
@@ -411,6 +419,8 @@ color: #272323;
     display: flex;
     flex-direction: column;
     transition: 0.5s;
+    animation: shadow 1s linear;
+    opacity: 1;
 }
 .yearly-targets:hover {
     transform: scale(1.02);
@@ -563,6 +573,8 @@ color: #272323;
     background-color: #fff;
     border-radius: 6px;
     transition: 0.5s;
+    animation: shadow 1s linear;
+    opacity: 1;
 }
 .tickets-statistics:hover {
     transform: scale(1.02);
@@ -629,6 +641,8 @@ color: #272323;
     top: 15%;
     border-radius: 6px;
     transition: 0.5s;
+    animation: shadow 1s linear;
+    opacity: 1;
 }
 .latest-news:hover {
     transform: scale(1.02);
@@ -690,7 +704,7 @@ color: #272323;
 
 .latest-news .h3-p-img-span h3,
 .latest-news .h3-p-img-span p {
-    left: 6%;
+    left: 25%;
     position: absolute;
 }
 
@@ -702,6 +716,74 @@ color: #272323;
     border-radius: 6px;
     background-color: #cccccc8c;
     width: fit-content;
+}
+
+
+.latest-tasks {
+    position: absolute;
+    width: 400px;
+    height: 255px;
+    background-color: #fff;
+    left: 35%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    transition: 0.5s;
+    animation: shadow 1s linear;
+    opacity: 1;
+}
+.latest-tasks:hover {
+    transform: scale(1.05);
+}
+
+.latest-tasks h4 {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.latest-tasks .h3-p-icon {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 15px;
+    background-color: #cccccc3f;
+}
+
+.latest-tasks .h3-p-icon h3 {
+    font-size: 14px;
+}
+.latest-tasks .h3-p-icon p {
+    font-size: 11px;
+    color: #8f8b8b;
+}
+.latest-tasks .h3-p-icon ion-icon {
+    position: absolute;
+    left: 90%;
+    margin-top: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.latest-tasks .h3-p-icon ion-icon:hover {
+    transform: scale(1.05);
+}
+
+.latest-tasks .del {
+    background-color: #cccccc3f;
+    text-decoration: line-through;
+    color: #8f8b8b;
+}
+.latest-tasks .del ion-icon {
+    cursor: none;
+}
+
+
+
+@keyframes shadow {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
 }
 
 
@@ -733,7 +815,11 @@ color: #272323;
 }
 .latest-news {
     left: 14%;
-    top: 57%;
+    top: 98%;
+}
+.latest-tasks {
+    left: 51%;
+    top: 98%;
 }
 }
 
@@ -769,7 +855,13 @@ color: #272323;
     left: 41.5%;
     top: 56.5%;
 }
+.latest-tasks {
+    left: 71.5%;
+    top: 56.5%;
+    width: 370px;
 }
+}
+
 
 @media (max-width: 711px) {
     .pages {
@@ -793,13 +885,18 @@ color: #272323;
 .latest-news {
     top: 195%;
 }
+.latest-tasks {
+    top: 240%;
+
+}
 }
 
 
 @media (max-width: 500px) {
     .pages {
         width: 110px;
-        height: 200vh;
+        height: 49vh;
+        border-radius: 6px;
     }
     .pages .content {
         font-size: 14px;
@@ -810,63 +907,73 @@ color: #272323;
     .pages .profiles .input-search {
     left: 30%;
 }
+.pages .container li {
+    list-style: none;
+    padding: 8px;
+    margin-top: 17px;
+}
     .dashboard-all {
     left: 30%;
     top: 12%;
     }
+
     .dashboard-all .h4-p-img,
     .dashboard-all .developer-h5-p {
         width: 270px;
     }
-        .dashboard-all .first-h3-span h3 {
+    .dashboard-all .first-h3-span {
+        left: -44px;
+    }
+    .dashboard-all .first-h3-span h3 {
     font-size: 10px;
     margin-top: 9px;
     margin-left: 25px;
-    position: absolute;
     width: 100px;
+    position: absolute;
     text-align: center;
 }
     .dashboard-all .first-h3-span span {
     top: 25px;
-     margin-left: 48px;
+    margin-left: 48px;
 }
-    .dashboard-all .developer-h5-p p {
+.dashboard-all .developer-h5-p p {
     font-size: 10px;
 }
-    .dashboard-all .developer-h5-p span {
+.dashboard-all .developer-h5-p span {
     font-size: 7px;
-    width: 100px;
+    width: 50px;
     height: 20px;
-    padding: 7px;
-    color: #fff;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
 }
 
     .quick-draft {
     top: 50%;
-    left: 30%;
-    width: 268px;
+    left: 4%;
+    width: 369px;
     }
     .yearly-targets {
         top: 88%;
-        left: 30%;
-        width: 268px;
+        left: 4%;
+        width: 369px;
     }
     .yearly-targets .one::after{
         font-size: 9px;
         top: 40px;
-        left: 115%;
+        left: 101%;
         width: fit-content;
     }
 .yearly-targets .two::after {
     font-size:  9px;
     top: 40px;
-    left: 91%;
+    left: 80%;
     width: fit-content;
 }
 .yearly-targets .three::after {
     font-size:  9px;
     top: 40px;
-    left: 110%;
+    left: 98%;
     width: fit-content;
 }
 .yearly-targets .one {
@@ -883,8 +990,8 @@ color: #272323;
 }
 .tickets-statistics {
     top: 126%;
-    left: 30%;
-    width: 268px;
+    left: 4%;
+    width: 371px;
     height: 250px;
 }
 .everything-1,
@@ -897,8 +1004,8 @@ color: #272323;
 }
 .latest-news {
     top: 163%;
-    left: 30%;
-    width: 268px;
+    left: 4%;
+    width: 371px;
 }
 .latest-news .h3-p-img-span h3 {
     font-size: 11px;
@@ -916,6 +1023,15 @@ color: #272323;
 .latest-news .h3-p-img-span h3,
 .latest-news .h3-p-img-span p {
     margin-left: 30%;
+}
+.latest-news .h3-p-img-span h3,
+.latest-news .h3-p-img-span p {
+    left: 6%;
+}
+.latest-tasks {
+    top: 201%;
+    left: 4%;
+    width: 371px;
 }
 
 }
@@ -1260,6 +1376,7 @@ before
 HTML
 تعمل بها اشكال والوان
 }
+
 
 
 

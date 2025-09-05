@@ -895,7 +895,7 @@ color: #272323;
 @media (max-width: 500px) {
     .pages {
         width: 110px;
-        height: 45vh;
+        height: 40vh;
         border-radius: 6px;
     }
     .pages .content {
@@ -909,8 +909,8 @@ color: #272323;
 }
 .pages .container li {
     list-style: none;
-    padding: 6px;
-    margin-top: 15px;
+    padding: 7px;
+    margin-top: 16px;
 }
     .dashboard-all {
     left: 30%;
@@ -1377,6 +1377,7 @@ before
 HTML
 تعمل بها اشكال والوان
 }
+
 
 
 
